@@ -213,10 +213,98 @@
 .partner_list tr td.lastCol {  
     border-right: none;  
 }  
-
-.footer_nav {
+.footer_section {
 	width:100%;
 	height: 840px;
 	background: url(../images/home/footer_bg.png) no-repeat center center;
 	background-size: 100%;
+	position: relative;
+}
+.footer_nav {
+	padding-top:360px;
+}
+
+.footerNav_list {
+	height: 200px;
+	background: #fff;
+}
+
+.footerNav_item {
+	float: left;
+	width:20%;
+	padding:10px;
+	height: 100%;
+}
+.footerNav_item a {
+	display: block;
+	width:100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(../images/home/footerNav_bg01.png);
+	background-position: center;
+	/*padding:0 24px;*/
+	text-align: center;
+}
+.nav_icon {
+	display: block;
+	width:100%;
+	height: 42px;
+	background:url(../images/home/footerNav_icon01.png) no-repeat center center;
+	background-size: 30px;
+	box-sizing: content-box;
+	padding:22px 0 20px;
+}
+.tel_icon {
+	background-image: url(../images/home/footerNav_icon02.png);
+}
+.email_icon {
+	background-image: url(../images/home/footerNav_icon03.png);
+}
+.qq_icon{
+	background-image: url(../images/home/footerNav_icon04.png);
+}
+.wechat_icon {
+	background-image: url(../images/home/footerNav_icon05.png);
+}
+.nav_tit {
+	font-size: 15px;
+	color:#373534;
+	margin-bottom: 10px;
+}
+.nav_txt {
+	font-size: 13px;
+	color:#464443;
+	line-height: 20px;
+	font-weight: normal;
+}
+.footerNav_active a {
+	background: #71c932;
+}
+.footerNav_active .nav_tit,.footerNav_active .nav_txt{
+	color:#fff;
+}
+
+.footer_tag {
+	width:100%;
+	height: 90px;
+	background: #71c932;
+	position: absolute;
+	bottom:0;
+}
+.footer_list {
+	width:990px;
+	height: 90px;
+	margin:0 auto;
+	color:#fff;
+}
+.footer_item {
+	float: left;
+	width:33.33%;
+	text-align: center;
+	padding:21px 0;
+}
+.footer_item p {
+	font-size: 15px;
+	line-height: 24px;
 }
