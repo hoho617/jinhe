@@ -1,0 +1,125 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color:#333;
+}
+tr,td,table {padding:0;margin:0;}
+.opacity:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+}
+.static_width {
+	width:1288px;
+	margin:0 auto;
+}
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float: right;
+}
+.clearfix:after {
+	content:"";
+	display: block;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
+}
+.none {
+	display: none;
+}
+/*头部*/
+.head {
+	position: fixed;
+	top:0;
+	width:100%;
+	height:88px;
+	line-height: 88px;
+}
+.headContent {
+	height:88px;
+	line-height: 88px;
+}
+
+.topmenu li.nav_item{
+	float: left;
+	list-style: none;
+	/*padding: 0 25px;*/
+	cursor: pointer;
+	position: relative;
+	width:128px;
+	text-align: center;
+	position: relative;
+}
+.topmenu li.nav_item a {
+	display: block;
+	color:#3c0000;
+	font-size: 16px;
+}
+.topmenu li.nav_active {
+	background: #71c932;
+	color:#fff;
+}
+.topmenu li.nav_active a {
+	color:#fff;
+}
+.topmenu li.nav_item:hover {
+	background: #71c932;
+	color:#fff;
+}
+.topmenu li.nav_item:hover a {
+	color:#fff;
+}
+.down_item:after {
+	content:"";
+	width: 0;
+    height: 0;
+    border-width: 8px 6px;
+    border-style: solid;
+    border-color:#3c0000 transparent transparent transparent;
+    position: absolute;
+    display: block;
+    top:40px;
+    right:18px;
+}
+.topmenu li.nav_active .down_item:after {
+	border-color:#fff transparent transparent transparent;
+}
+.topmenu li.nav_item:hover .down_item:after {
+	border-color:#fff transparent transparent transparent;
+}
+.dropdown_box {
+	position: absolute;
+	top:58px;
+	left:0;
+	width:100%;
+	display: none;
+}
+.about_lists li{
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	color:#fff;
+	background: #71c932;
+	font-size: 16px;
+	color:#f4f5f2;
+}
+
+.main_content {
+	position: absolute;
+	top:88px;
+	bottom:0;
+	width:100%;
+	overflow: auto;
+	background: url(../images/common/cont_bg.jpg) no-repeat center;
+	background-size: 100%;
+}
